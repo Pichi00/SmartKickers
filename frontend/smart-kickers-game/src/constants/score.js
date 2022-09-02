@@ -1,6 +1,6 @@
 export const TeamID = {
-  Team_white: 1,
-  Team_blue: 2,
+  Team_white: 0,
+  Team_blue: 1,
 };
 
 export const ScoreChange = {

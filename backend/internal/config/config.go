@@ -4,8 +4,8 @@ const (
 	ServerAddress = "0.0.0.0:3000"
 
 	// Aliases for team ID's received from node application
-	TeamWhite = 1
-	TeamBlue  = 2
+	TeamWhite = 0
+	TeamBlue  = 1
 
 	// Constants for query attributes from API URLs
 	AttributeTeam   = "team"
