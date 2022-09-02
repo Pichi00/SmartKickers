@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/HackYourCareer/SmartKickers/internal/config"
 	"github.com/HackYourCareer/SmartKickers/internal/model"
 	"github.com/stretchr/testify/assert"
 )
@@ -45,7 +46,7 @@ func TestCreateResponse(t *testing.T) {
 			name: "goal message",
 			msgIn: dispatcherMsg{
 				MsgType: "",
-				Goal:    2,
+				Goal:    config.TeamBlue,
 				TableID: "1",
 				X:       0,
 				Y:       0,

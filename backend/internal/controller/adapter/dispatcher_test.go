@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/HackYourCareer/SmartKickers/internal/config"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -87,7 +88,7 @@ func TestUnpackDispatcherMsg(t *testing.T) {
 			name: "goal message",
 			msgIn: dispatcherMsg{
 				MsgType: "",
-				Goal:    2,
+				Goal:    config.TeamBlue,
 				TableID: "1",
 				X:       0,
 				Y:       0,
@@ -95,7 +96,7 @@ func TestUnpackDispatcherMsg(t *testing.T) {
 			ExpectedMsgOut: Message{
 				Category: MsgGoal,
 				TableID:  "1",
-				Team:     2,
+				Team:     config.TeamBlue,
 			},
 		},
 		{
